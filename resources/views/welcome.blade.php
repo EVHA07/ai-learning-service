@@ -73,7 +73,7 @@
             <div class="text-2xl font-bold gradient-text">AI Learning</div>
             <div class="flex gap-6">
                 <a href="#features" class="hover:text-ai-neon-purple transition-colors">Features</a>
-                <a href="#pricing" class="hover:text-ai-neon-purple transition-colors">Pricing</a>
+                <a href="#benefits" class="hover:text-ai-neon-purple transition-colors">Benefits</a>
                 <a href="{{ route('login') }}" class="px-6 py-2 bg-gradient-to-r from-ai-neon-purple to-ai-neon-blue rounded-full hover:scale-105 transition-transform">Login</a>
                 <a href="{{ route('register') }}" class="px-6 py-2 glass-morphism rounded-full hover:bg-white/10 transition-all">Register</a>
             </div>
@@ -161,37 +161,126 @@
         </div>
     </section>
 
-    <!-- Pricing Preview -->
-    <section id="pricing" class="py-20 relative">
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 relative">
         <div class="container mx-auto px-6">
             <h2 class="text-5xl font-bold text-center mb-16">
-                <span class="gradient-text">Simple Pricing</span>
+                <span class="gradient-text">Benefits of AI Learning</span>
             </h2>
             
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Career Growth -->
                 <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
-                    <h3 class="text-3xl font-bold mb-4 text-ai-neon-blue">AI Courses</h3>
-                    <p class="text-4xl font-bold mb-6">$99<span class="text-lg text-gray-400">/course</span></p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Lifetime Access</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Expert Instructors</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Certificate of Completion</li>
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 14a6 6 0 0 1 6-6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-400">Career Growth</h3>
+                    <p class="text-gray-300 mb-4">Advance your career with in-demand AI skills and certifications recognized by top tech companies.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-green-400 mr-2 mt-1">•</span> Industry-recognized certificates</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2 mt-1">•</span> Job-ready portfolio projects</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2 mt-1">•</span> Networking opportunities</li>
                     </ul>
-                    <a href="{{ route('register') }}" class="w-full py-3 bg-gradient-to-r from-ai-neon-purple to-ai-neon-blue rounded-full text-center font-semibold hover:scale-105 transition-transform block">
-                        Get Started
-                    </a>
                 </div>
-                
-                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border border-2 border-ai-neon-purple">
-                    <h3 class="text-3xl font-bold mb-4 text-ai-neon-purple">AI Agents</h3>
-                    <p class="text-4xl font-bold mb-6">$49<span class="text-lg text-gray-400">/month</span></p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Personal AI Tutor</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 24/7 Availability</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Adaptive Learning</li>
+
+                <!-- Flexible Learning -->
+                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Flexible Learning</h3>
+                    <p class="text-gray-300 mb-4">Learn at your own pace with 24/7 access to course materials and AI-powered personalized guidance.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-blue-400 mr-2 mt-1">•</span> Self-paced learning paths</li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-2 mt-1">•</span> Mobile-friendly access</li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-2 mt-1">•</span> Lifetime course access</li>
                     </ul>
-                    <a href="{{ route('register') }}" class="w-full py-3 bg-gradient-to-r from-ai-neon-purple to-ai-neon-blue rounded-full text-center font-semibold hover:scale-105 transition-transform block">
-                        Try Now
+                </div>
+
+                <!-- Expert Support -->
+                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Expert Support</h3>
+                    <p class="text-gray-300 mb-4">Get guidance from industry experts and AI tutors who are committed to your success.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-purple-400 mr-2 mt-1">•</span> Live instructor Q&A sessions</li>
+                        <li class="flex items-start"><span class="text-purple-400 mr-2 mt-1">•</span> 24/7 AI tutor assistance</li>
+                        <li class="flex items-start"><span class="text-purple-400 mr-2 mt-1">•</span> Peer learning community</li>
+                    </ul>
+                </div>
+
+                <!-- Cutting-Edge Tech -->
+                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
+                    <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-orange-400">Cutting-Edge Tech</h3>
+                    <p class="text-gray-300 mb-4">Master the latest AI technologies and tools used by leading tech companies worldwide.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-orange-400 mr-2 mt-1">•</span> Latest AI frameworks</li>
+                        <li class="flex items-start"><span class="text-orange-400 mr-2 mt-1">•</span> Hands-on lab environments</li>
+                        <li class="flex items-start"><span class="text-orange-400 mr-2 mt-1">•</span> Real-world case studies</li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
+                    <div class="w-16 h-16 bg-gradient-to-r from-teal-500 to-green-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-teal-400">Global Community</h3>
+                    <p class="text-gray-300 mb-4">Join a diverse community of learners from around the world and build lasting professional connections.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-teal-400 mr-2 mt-1">•</span> Global student network</li>
+                        <li class="flex items-start"><span class="text-teal-400 mr-2 mt-1">•</span> Collaborative projects</li>
+                        <li class="flex items-start"><span class="text-teal-400 mr-2 mt-1">•</span> Alumni success stories</li>
+                    </ul>
+                </div>
+
+                <!-- Future-Ready -->
+                <div class="glass-morphism rounded-2xl p-8 hover:scale-105 transition-transform duration-300 neon-border">
+                    <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl mb-6 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-400">Future-Ready Skills</h3>
+                    <p class="text-gray-300 mb-4">Prepare for the future of work with skills that will be in high demand over the next decade.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2 mt-1">•</span> Future-proof curriculum</li>
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2 mt-1">•</span> Emerging tech trends</li>
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2 mt-1">•</span> Continuous updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <h3 class="text-3xl font-bold mb-6">
+                    <span class="gradient-text">Ready to Transform Your Future?</span>
+                </h3>
+                <p class="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                    Join thousands of learners who are already shaping tomorrow's technology landscape today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="{{ route('register') }}" class="px-12 py-4 bg-gradient-to-r from-ai-neon-purple to-ai-neon-blue rounded-full text-xl font-semibold hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50">
+                        Start Your Journey
+                    </a>
+                    <a href="#features" class="px-12 py-4 glass-morphism rounded-full text-xl font-semibold hover:bg-white/10 transition-all duration-300 border border-white/20">
+                        Learn More
                     </a>
                 </div>
             </div>
